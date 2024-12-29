@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Minimal Blog</h1>
+      <nav>
+        <button class="dark-mode-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">🌙</button>
+        <a href="admin.html" class="admin-link">Admin</a>
+      </nav>
+    </header>
+    <input type="text" class="search-bar" placeholder="Search posts..." oninput="filterPosts(event)">
+    <ul class="post-list" id="post-list"></ul>
+  </div>
+  <script src="config.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
